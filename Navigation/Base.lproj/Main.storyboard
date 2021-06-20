@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Новый пост"/>
                                 <connections>
-                                    <segue destination="zBO-fv-Eed" kind="show" identifier="NewPost" id="Vjg-Qh-yQN"/>
+                                    <segue destination="3Q4-By-8AO" kind="show" id="XsS-Ve-gPe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,22 +35,57 @@
             <point key="canvasLocation" x="1330.4347826086957" y="-687.05357142857144"/>
         </scene>
         <!--Post View Controller-->
-        <scene sceneID="M4a-o7-UYF">
+        <scene sceneID="dya-7b-q7z">
             <objects>
-                <viewController id="zBO-fv-Eed" customClass="PostViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XT0-du-bdc">
+                <viewController id="3Q4-By-8AO" customClass="PostViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Pl-xH-eaz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="pf2-BZ-dGl"/>
+                        <viewLayoutGuide key="safeArea" id="EV4-T7-AT1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                        </accessibility>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="ol6-l6-n8t"/>
+                    <navigationItem key="navigationItem" id="Mys-Z5-nuq">
+                        <barButtonItem key="rightBarButtonItem" title="Инфо" id="yrW-RS-n4W">
+                            <connections>
+                                <action selector="tap:" destination="3Q4-By-8AO" id="22D-Qo-eqt"/>
+                                <segue destination="XpM-VM-Dbd" kind="presentation" id="wXt-Fb-8zd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9N-in-ewa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJk-ij-pRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2271" y="-940"/>
+            <point key="canvasLocation" x="2238" y="-687"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="4Sl-Qd-7o1">
+            <objects>
+                <viewController id="XpM-VM-Dbd" customClass="InfoViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KFv-kD-fFG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h1-qU-EHS">
+                                <rect key="frame" x="162" y="475" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Нажми меня"/>
+                                <connections>
+                                    <action selector="pressMe:" destination="XpM-VM-Dbd" eventType="touchUpInside" id="Gcz-nv-fZ9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jJP-Ly-dL3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2q-yI-ZH7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3084" y="-687"/>
         </scene>
         <!--Лента-->
         <scene sceneID="jHN-PU-RWA">

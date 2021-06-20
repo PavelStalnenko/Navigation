@@ -15,7 +15,21 @@ class InfoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func pressMe(_ sender: Any) {
+        let alert = UIAlertController(title: "Ошибка", message: "Упс... что-то пошло не так", preferredStyle: .alert)
+               let  cancelAction = UIAlertAction(title: "Отменить", style: .cancel){ _ in
+                    print("cancel")
+                }
+                let okAction = UIAlertAction(title: "ОК", style: .default){ _ in
+                     print("ОК")
+                 }
+                alert.addAction(okAction)
+                present(alert, animated: true, completion: nil)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+            }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -26,4 +40,4 @@ class InfoViewController: UIViewController {
     }
     */
 
-}
+

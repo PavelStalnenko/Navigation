@@ -9,8 +9,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    @IBAction func modalAlert(_ sender: Any) {
-    }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
