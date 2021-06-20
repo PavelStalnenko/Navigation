@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Новый пост"/>
                                 <connections>
-                                    <segue destination="3Q4-By-8AO" kind="show" id="XsS-Ve-gPe"/>
+                                    <segue destination="3Q4-By-8AO" kind="show" identifier="NewPost" id="XsS-Ve-gPe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,6 +82,7 @@
                         <viewLayoutGuide key="safeArea" id="jJP-Ly-dL3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="f7b-bL-P6C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2q-yI-ZH7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
